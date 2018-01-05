@@ -1,0 +1,73 @@
+2018-01-05 15:04:31,510 ERROR: Exception on /request_partner [GET] [in /Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1632, in finalize_request
+    response = self.process_response(response)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1858, in process_response
+    self.save_session(ctx.session, response)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 924, in save_session
+    return self.session_interface.save_session(self, session, response)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/sessions.py", line 363, in save_session
+    val = self.get_signing_serializer(app).dumps(dict(session))
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/itsdangerous.py", line 565, in dumps
+    payload = want_bytes(self.dump_payload(obj))
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/itsdangerous.py", line 847, in dump_payload
+    json = super(URLSafeSerializerMixin, self).dump_payload(obj)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/itsdangerous.py", line 550, in dump_payload
+    return want_bytes(self.serializer.dumps(obj))
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/sessions.py", line 85, in dumps
+    return json.dumps(_tag(value), separators=(',', ':'))
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/json.py", line 123, in dumps
+    rv = _json.dumps(obj, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 251, in dumps
+    sort_keys=sort_keys, **kw).encode(obj)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 209, in encode
+    chunks = list(chunks)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 434, in _iterencode
+    for chunk in _iterencode_dict(o, _current_indent_level):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 408, in _iterencode_dict
+    for chunk in chunks:
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 332, in _iterencode_list
+    for chunk in chunks:
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 408, in _iterencode_dict
+    for chunk in chunks:
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 332, in _iterencode_list
+    for chunk in chunks:
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 442, in _iterencode
+    o = _default(o)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/json.py", line 80, in default
+    return _json.JSONEncoder.default(self, o)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: 84 intervals: [('Monday', '1:54pm', 'Monday', '4:07pm'), ('Wednesday', '9:18am', 'Wednesday', '10:11am'), ('Thursday', '5:15pm', 'Thursday', '6:19pm'), ('Wednesday', '9:51am', 'Wednesday', '1:53pm'), ('Tuesday', '1:50pm', 'Tuesday', '6:30pm'), ('Saturday', '10:18am', 'Saturday', '2:52pm'), ('Saturday', '12:20am', 'Saturday', '3:20am'), ('Wednesday', '10:35am', 'Wednesday', '2:22pm'), ('Saturday', '11:19am', 'Saturday', '2:31pm'), ('Friday', '12:31am', 'Friday', '4:25am'), ('Saturday', '9:25pm', 'Saturday', '11:58pm'), ('Thursday', '5:05pm', 'Thursday', '6:57pm'), ('Monday', '9:37am', 'Monday', '11:55am'), ('Monday', '10:53pm', 'Tuesday', '1:19am'), ('Monday', '11:43pm', 'Tuesday', '2:59am'), ('Thursday', '11:06am', 'Thursday', '2:41pm'), ('Sunday', '6:51pm', 'Sunday', '8:35pm'), ('Wednesday', '5:20am', 'Wednesday', '7:14am'), ('Sunday', '5:31am', 'Sunday', '8:27am'), ('Thursday', '6:44am', 'Thursday', '8:37am'), ('Friday', '6:15am', 'Friday', '7:27am'), ('Monday', '4:56am', 'Monday', '8:37am'), ('Thursday', '11:58am', 'Thursday', '4:38pm'), ('Sunday', '4:27am', 'Sunday', '5:24am'), ('Sunday', '12:31pm', 'Sunday', '4:04pm'), ('Thursday', '4:09am', 'Thursday', '5:18am'), ('Wednesday', '12:22am', 'Wednesday', '2:53am'), ('Saturday', '5:54am', 'Saturday', '6:54am'), ('Saturday', '7:55pm', 'Saturday', '8:50pm'), ('Saturday', '9:17am', 'Saturday', '12:34pm'), ('Tuesday', '12:17pm', 'Tuesday', '5:09pm'), ('Sunday', '7:53pm', 'Sunday', '11:35pm'), ('Thursday', '1:26am', 'Thursday', '5:48am'), ('Sunday', '9:47am', 'Sunday', '11:35am'), ('Saturday', '6:30am', 'Saturday', '10:44am'), ('Sunday', '12:16pm', 'Sunday', '4:33pm'), ('Tuesday', '7:30pm', 'Tuesday', '11:01pm'), ('Thursday', '7:59am', 'Thursday', '10:10am'), ('Saturday', '5:15am', 'Saturday', '8:25am'), ('Monday', '3:24am', 'Monday', '4:11am'), ('Sunday', '10:35pm', 'Monday', '3:21am'), ('Friday', '7:11am', 'Friday', '10:53am'), ('Friday', '8:56am', 'Friday', '10:08am'), ('Monday', '1:47pm', 'Monday', '2:57pm'), ('Saturday', '2:56pm', 'Saturday', '6:28pm'), ('Monday', '7:44pm', 'Tuesday', '12:38am'), ('Monday', '4:31am', 'Monday', '7:01am'), ('Friday', '4:28am', 'Friday', '5:49am'), ('Saturday', '10:05pm', 'Saturday', '10:52pm'), ('Monday', '6:46am', 'Monday', '9:41am'), ('Friday', '1:54pm', 'Friday', '4:54pm'), ('Saturday', '5:08pm', 'Saturday', '8:52pm'), ('Thursday', '11:02am', 'Thursday', '3:38pm'), ('Thursday', '11:28pm', 'Friday', '4:18am'), ('Monday', '4:39am', 'Monday', '6:06am'), ('Saturday', '3:25pm', 'Saturday', '5:39pm'), ('Monday', '5:10am', 'Monday', '6:09am'), ('Tuesday', '10:28pm', 'Wednesday', '1:11am'), ('Friday', '7:33am', 'Friday', '11:10am'), ('Monday', '5:01pm', 'Monday', '5:51pm'), ('Friday', '2:01pm', 'Friday', '4:31pm'), ('Monday', '5:53pm', 'Monday', '6:31pm'), ('Wednesday', '11:00am', 'Wednesday', '2:04pm'), ('Friday', '1:12am', 'Friday', '4:25am'), ('Saturday', '11:02am', 'Saturday', '2:34pm'), ('Friday', '8:03am', 'Friday', '11:23am'), ('Thursday', '6:41pm', 'Thursday', '10:27pm'), ('Tuesday', '3:18am', 'Tuesday', '4:29am'), ('Tuesday', '8:20am', 'Tuesday', '9:42am'), ('Friday', '7:37pm', 'Friday', '8:19pm'), ('Saturday', '4:59am', 'Saturday', '7:31am'), ('Friday', '6:10am', 'Friday', '11:01am'), ('Wednesday', '5:47am', 'Wednesday', '10:16am'), ('Thursday', '1:41pm', 'Thursday', '5:03pm'), ('Tuesday', '7:16pm', 'Tuesday', '10:52pm'), ('Thursday', '2:42pm', 'Thursday', '3:33pm'), ('Friday', '9:50pm', 'Saturday', '1:32am'), ('Thursday', '11:13pm', 'Friday', '12:10am'), ('Sunday', '5:34am', 'Sunday', '7:58am'), ('Monday', '10:20pm', 'Tuesday', '2:33am'), ('Thursday', '5:47am', 'Thursday', '9:47am'), ('Monday', '12:33pm', 'Monday', '3:07pm'), ('Tuesday', '10:23am', 'Tuesday', '11:35am'), ('Saturday', '8:34pm', 'Saturday', '10:25pm')] is not JSON serializable
+2018-01-05 15:05:30,784 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 15:06:19,556 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 15:06:21,559 ERROR: Exception on /request_partner [GET] [in /Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/routes.py", line 169, in request_partner
+    inter = IN.intersection_minutes(t1, t2)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/scripts/intersections.py", line 63, in intersection_minutes
+    t1, t2 = list_to_intervaltree(l1), list_to_intervaltree(l2)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/scripts/intersections.py", line 26, in list_to_intervaltree
+    for i in l:
+TypeError: iteration over non-sequence
+2018-01-05 15:07:43,910 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 15:08:38,964 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 15:09:04,975 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 15:09:32,070 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 15:11:40,429 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]

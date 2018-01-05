@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+    <h1>Pairgramming Pro - {{ current_user.username }}</h1>
+    <p>
+        Welcome! Pairgramming Pro is a scheduling tool for Tufts CS pair programming assignments. Need a partner for your next homework assignment? Pairgramming Pro will find you a partner with maximum overlapping free time to work. 
+    </p>
+    <p>    
+        To get started, enter some chunks of time when you are able to work as free time intervals below. The more intervals you add, the greater the chances Pairgramming Pro will find you a partner with decent overlap. You can modify your schedule at any time by adding additional intervals, or by deleting intervals by unique id one by one (if you wish to erase your entire schedule, go to Profile -> Edit Profile -> Clear Schedule). Scroll down to view your schedule. When you are ready to be paired, click Request Partner. 
+    </p>
+    <p>
+        Adding or deleting free intervals from your schedule: 
+        If you are free from 10:00am to 4:00pm on Tuesdays, then Start day = Tuesday and End day = Tuesday.
+        If you are free from 9:00pm on Wednesdays until 1:30am on Thursdays, then Start day = Wednesday and End day = Thursday. You can enter time as military time or otherwise; however, be aware that if am or pm is not specified, military time is assumed (don't add 3:00 if you mean 3:00pm, as 3:00 will become 3:00am!).
+    </p>
+    <div class="text-center">
+        <a href="{{ url_for('request_partner') }}" class="btn btn-success btn-lg">Request Partner</a>
+    </div>
+    <br>
+    <table class="table">
+        <tr>
+            <th valign="top">Add Free Time Interval:</th>
+            <td>
+                {% if addform %}
+                {{ wtf.quick_form(addform) }}
+                {% endif %}
+            </td>
+        </tr>
+        <tr>
+            
+            <th valign="top">Delete Free Time Interval:</th>
+            <td valign="top">
+                {% if delform %}
+                {{ wtf.quick_form(delform) }}
+                {% endif %}
+            </td>
+        </tr>
+    </table>
+    <h2>Your Schedule: </h2>
+        {% for item in schedule %}
+        <div><p>{{ item }}</b></p></div>
+        {% endfor %}
+{% endblock %}

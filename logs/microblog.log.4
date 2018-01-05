@@ -1,0 +1,106 @@
+2018-01-05 15:28:41,785 ERROR: Exception on /request_partner [GET] [in /Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1632, in finalize_request
+    response = self.process_response(response)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1858, in process_response
+    self.save_session(ctx.session, response)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 924, in save_session
+    return self.session_interface.save_session(self, session, response)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/sessions.py", line 363, in save_session
+    val = self.get_signing_serializer(app).dumps(dict(session))
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/itsdangerous.py", line 565, in dumps
+    payload = want_bytes(self.dump_payload(obj))
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/itsdangerous.py", line 847, in dump_payload
+    json = super(URLSafeSerializerMixin, self).dump_payload(obj)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/itsdangerous.py", line 550, in dump_payload
+    return want_bytes(self.serializer.dumps(obj))
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/sessions.py", line 85, in dumps
+    return json.dumps(_tag(value), separators=(',', ':'))
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/json.py", line 123, in dumps
+    rv = _json.dumps(obj, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 251, in dumps
+    sort_keys=sort_keys, **kw).encode(obj)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 209, in encode
+    chunks = list(chunks)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 434, in _iterencode
+    for chunk in _iterencode_dict(o, _current_indent_level):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 408, in _iterencode_dict
+    for chunk in chunks:
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 332, in _iterencode_list
+    for chunk in chunks:
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 408, in _iterencode_dict
+    for chunk in chunks:
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 332, in _iterencode_list
+    for chunk in chunks:
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 332, in _iterencode_list
+    for chunk in chunks:
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 442, in _iterencode
+    o = _default(o)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/json.py", line 80, in default
+    return _json.JSONEncoder.default(self, o)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: 1 intervals: [('Tuesday', '5:21pm', 'Tuesday', '5:51pm')] is not JSON serializable
+2018-01-05 15:29:13,236 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 15:30:05,190 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 15:30:14,826 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 15:30:23,849 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 15:30:51,064 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 15:31:22,107 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 15:31:59,718 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 15:32:25,882 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 15:32:48,843 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 15:33:05,846 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 15:33:52,591 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 15:35:01,464 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 15:43:48,039 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 15:43:55,093 ERROR: Exception on /request_partner [GET] [in /Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/routes.py", line 138, in request_partner
+    flash(len(compatible_users))
+TypeError: object of type 'BaseQuery' has no len()
+2018-01-05 15:44:28,399 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 15:44:39,904 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 15:47:25,037 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 15:48:50,649 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 15:49:05,322 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 15:49:43,228 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 15:49:45,265 ERROR: Exception on /request_partner [GET] [in /Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/routes.py", line 139, in request_partner
+    compatible_users.remove(current_user)
+AttributeError: 'BaseQuery' object has no attribute 'remove'
+2018-01-05 15:50:44,287 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 15:51:19,717 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 15:57:07,272 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 15:57:44,665 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 15:58:03,151 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 16:10:22,268 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]

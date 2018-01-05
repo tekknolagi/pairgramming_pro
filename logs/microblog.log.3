@@ -1,0 +1,79 @@
+2018-01-05 16:10:26,124 ERROR: Exception on /request_partner [GET] [in /Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/routes.py", line 148, in request_partner
+    my_intervals = FreeInterval.query.filter_by(author=current_user.username)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/sqlalchemy/orm/query.py", line 1585, in filter_by
+    for key, value in kwargs.items()]
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/sqlalchemy/sql/operators.py", line 344, in __eq__
+    return self.operate(eq, other)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/sqlalchemy/orm/attributes.py", line 180, in operate
+    return op(self.comparator, *other, **kwargs)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/sqlalchemy/orm/relationships.py", line 1039, in __eq__
+    other, adapt_source=self.adapter))
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/sqlalchemy/orm/relationships.py", line 1372, in _optimized_compare
+    state = attributes.instance_state(state)
+AttributeError: 'unicode' object has no attribute '_sa_instance_state'
+2018-01-05 16:10:50,898 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 16:15:47,872 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 16:15:55,708 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 16:16:00,306 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 16:20:48,865 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 16:20:50,203 ERROR: Exception on /request_partner [GET] [in /Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1632, in finalize_request
+    response = self.process_response(response)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1858, in process_response
+    self.save_session(ctx.session, response)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 924, in save_session
+    return self.session_interface.save_session(self, session, response)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/sessions.py", line 363, in save_session
+    val = self.get_signing_serializer(app).dumps(dict(session))
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/itsdangerous.py", line 565, in dumps
+    payload = want_bytes(self.dump_payload(obj))
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/itsdangerous.py", line 847, in dump_payload
+    json = super(URLSafeSerializerMixin, self).dump_payload(obj)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/itsdangerous.py", line 550, in dump_payload
+    return want_bytes(self.serializer.dumps(obj))
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/sessions.py", line 85, in dumps
+    return json.dumps(_tag(value), separators=(',', ':'))
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/json.py", line 123, in dumps
+    rv = _json.dumps(obj, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 251, in dumps
+    sort_keys=sort_keys, **kw).encode(obj)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 209, in encode
+    chunks = list(chunks)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 434, in _iterencode
+    for chunk in _iterencode_dict(o, _current_indent_level):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 408, in _iterencode_dict
+    for chunk in chunks:
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 332, in _iterencode_list
+    for chunk in chunks:
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 408, in _iterencode_dict
+    for chunk in chunks:
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 332, in _iterencode_list
+    for chunk in chunks:
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 442, in _iterencode
+    o = _default(o)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/json.py", line 80, in default
+    return _json.JSONEncoder.default(self, o)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <sqlalchemy.orm.dynamic.AppenderBaseQuery object at 0x10443c110> is not JSON serializable
+2018-01-05 16:21:25,954 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 16:21:39,779 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]

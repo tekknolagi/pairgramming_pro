@@ -1,0 +1,99 @@
+2018-01-05 12:59:17,775 ERROR: Exception on /request_partner [GET] [in /Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/routes.py", line 146, in request_partner
+    temp1 = TP.timestr_to_minutes(t1)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/scripts/timeparsing.py", line 112, in timestr_to_minutes
+    return map(to_min_interval, tx)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/scripts/timeparsing.py", line 93, in to_min_interval
+    shour, ehour = parse_hours(s), parse_hours(e)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/scripts/timeparsing.py", line 49, in parse_hours
+    raise Exception('time > 24 hours')
+Exception: time > 24 hours
+2018-01-05 13:22:38,999 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 13:22:42,925 ERROR: Exception on /request_partner [GET] [in /Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/routes.py", line 146, in request_partner
+    temp1 = TP.timestr_to_minutes(t1)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/scripts/timeparsing.py", line 112, in timestr_to_minutes
+    return map(to_min_interval, tx)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/scripts/timeparsing.py", line 93, in to_min_interval
+    shour, ehour = parse_hours(s), parse_hours(e)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/scripts/timeparsing.py", line 46, in parse_hours
+    raise Exception('illformed time: strange hours')
+Exception: illformed time: strange hours
+2018-01-05 13:23:02,860 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 13:24:51,917 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 13:24:58,078 ERROR: Exception on /request_partner [GET] [in /Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/routes.py", line 146, in request_partner
+    ts, tftm
+UnboundLocalError: local variable 'ts' referenced before assignment
+2018-01-05 13:25:12,007 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 13:25:29,885 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 13:25:47,754 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 13:28:44,682 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 13:30:14,470 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 13:30:33,925 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 13:32:31,145 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 13:40:07,574 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 13:45:59,169 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 13:48:10,514 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 13:48:42,368 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 13:50:04,049 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 13:52:01,741 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 13:52:11,698 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 13:53:06,536 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 13:53:33,766 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 13:54:35,341 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 13:54:46,094 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 13:55:11,791 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 13:55:28,213 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 13:57:15,206 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 13:57:36,879 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 13:58:49,115 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 13:59:11,766 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 13:59:42,228 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 14:00:35,874 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 14:06:01,947 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 14:06:46,857 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 14:12:08,760 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 14:12:30,336 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 14:50:17,034 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 15:03:46,642 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 15:04:29,618 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]

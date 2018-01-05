@@ -1,0 +1,112 @@
+2018-01-05 16:22:12,462 ERROR: Exception on /request_partner [GET] [in /Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1632, in finalize_request
+    response = self.process_response(response)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1858, in process_response
+    self.save_session(ctx.session, response)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 924, in save_session
+    return self.session_interface.save_session(self, session, response)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/sessions.py", line 363, in save_session
+    val = self.get_signing_serializer(app).dumps(dict(session))
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/itsdangerous.py", line 565, in dumps
+    payload = want_bytes(self.dump_payload(obj))
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/itsdangerous.py", line 847, in dump_payload
+    json = super(URLSafeSerializerMixin, self).dump_payload(obj)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/itsdangerous.py", line 550, in dump_payload
+    return want_bytes(self.serializer.dumps(obj))
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/sessions.py", line 85, in dumps
+    return json.dumps(_tag(value), separators=(',', ':'))
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/json.py", line 123, in dumps
+    rv = _json.dumps(obj, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 251, in dumps
+    sort_keys=sort_keys, **kw).encode(obj)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 209, in encode
+    chunks = list(chunks)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 434, in _iterencode
+    for chunk in _iterencode_dict(o, _current_indent_level):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 408, in _iterencode_dict
+    for chunk in chunks:
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 332, in _iterencode_list
+    for chunk in chunks:
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 408, in _iterencode_dict
+    for chunk in chunks:
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 332, in _iterencode_list
+    for chunk in chunks:
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 442, in _iterencode
+    o = _default(o)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/json.py", line 80, in default
+    return _json.JSONEncoder.default(self, o)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: [id=2]: Free from Friday at 4:30 to Friday at 6:00am. is not JSON serializable
+2018-01-05 16:22:58,585 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 16:22:59,937 ERROR: Exception on /request_partner [GET] [in /Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1632, in finalize_request
+    response = self.process_response(response)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1858, in process_response
+    self.save_session(ctx.session, response)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 924, in save_session
+    return self.session_interface.save_session(self, session, response)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/sessions.py", line 363, in save_session
+    val = self.get_signing_serializer(app).dumps(dict(session))
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/itsdangerous.py", line 565, in dumps
+    payload = want_bytes(self.dump_payload(obj))
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/itsdangerous.py", line 847, in dump_payload
+    json = super(URLSafeSerializerMixin, self).dump_payload(obj)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/itsdangerous.py", line 550, in dump_payload
+    return want_bytes(self.serializer.dumps(obj))
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/sessions.py", line 85, in dumps
+    return json.dumps(_tag(value), separators=(',', ':'))
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/json.py", line 123, in dumps
+    rv = _json.dumps(obj, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 251, in dumps
+    sort_keys=sort_keys, **kw).encode(obj)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 209, in encode
+    chunks = list(chunks)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 434, in _iterencode
+    for chunk in _iterencode_dict(o, _current_indent_level):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 408, in _iterencode_dict
+    for chunk in chunks:
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 332, in _iterencode_list
+    for chunk in chunks:
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 408, in _iterencode_dict
+    for chunk in chunks:
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 332, in _iterencode_list
+    for chunk in chunks:
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 442, in _iterencode
+    o = _default(o)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/json.py", line 80, in default
+    return _json.JSONEncoder.default(self, o)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <bound method FreeInterval.time_string of [id=2]: Free from Friday at 4:30 to Friday at 6:00am.> is not JSON serializable
+2018-01-05 16:24:31,045 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 16:26:19,604 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 16:27:00,223 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 16:27:56,027 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 16:30:24,727 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 16:31:19,920 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 16:33:44,573 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 16:34:16,448 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 16:43:22,324 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 16:44:50,620 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 16:46:02,303 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 16:47:47,165 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 16:48:27,014 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 16:55:01,204 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 16:56:29,092 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 16:58:02,965 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 17:02:14,285 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 17:02:57,847 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 17:11:49,130 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 17:12:54,292 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 17:18:03,620 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]

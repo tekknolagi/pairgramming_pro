@@ -1,0 +1,121 @@
+2018-01-05 12:53:25,507 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 12:53:28,524 ERROR: Exception on /request_partner [GET] [in /Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/routes.py", line 146, in request_partner
+    temp1 = TP.timestr_to_minutes(t1)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/scripts/timeparsing.py", line 108, in timestr_to_minutes
+    return map(to_min_interval, tx)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/scripts/timeparsing.py", line 89, in to_min_interval
+    shour, ehour = parse_hours(s), parse_hours(e)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/scripts/timeparsing.py", line 45, in parse_hours
+    raise Exception('time > 24 hours')
+Exception: time > 24 hours
+2018-01-05 12:54:17,225 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 12:54:21,513 ERROR: Exception on /request_partner [GET] [in /Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/routes.py", line 146, in request_partner
+    temp1 = TP.timestr_to_minutes(t1)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/scripts/timeparsing.py", line 108, in timestr_to_minutes
+    return map(to_min_interval, tx)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/scripts/timeparsing.py", line 89, in to_min_interval
+    shour, ehour = parse_hours(s), parse_hours(e)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/scripts/timeparsing.py", line 56, in parse_hours
+    raise Exception('negative time')
+Exception: negative time
+2018-01-05 12:54:38,700 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 12:54:41,533 ERROR: Exception on /request_partner [GET] [in /Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/routes.py", line 146, in request_partner
+    temp1 = TP.timestr_to_minutes(t1)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/scripts/timeparsing.py", line 108, in timestr_to_minutes
+    return map(to_min_interval, tx)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/scripts/timeparsing.py", line 89, in to_min_interval
+    shour, ehour = parse_hours(s), parse_hours(e)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/scripts/timeparsing.py", line 42, in parse_hours
+    hours = int(temp[0])
+ValueError: invalid literal for int() with base 10: 'f'
+2018-01-05 12:58:03,966 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 12:58:08,136 ERROR: Exception on /request_partner [GET] [in /Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/routes.py", line 146, in request_partner
+    temp1 = TP.timestr_to_minutes(t1)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/scripts/timeparsing.py", line 112, in timestr_to_minutes
+    return map(to_min_interval, tx)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/scripts/timeparsing.py", line 93, in to_min_interval
+    shour, ehour = parse_hours(s), parse_hours(e)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/scripts/timeparsing.py", line 46, in parse_hours
+    raise Exception('illformed time: strange hours')
+Exception: illformed time: strange hours
+2018-01-05 12:58:26,834 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 12:58:29,345 ERROR: Exception on /request_partner [GET] [in /Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/routes.py", line 146, in request_partner
+    temp1 = TP.timestr_to_minutes(t1)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/scripts/timeparsing.py", line 112, in timestr_to_minutes
+    return map(to_min_interval, tx)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/scripts/timeparsing.py", line 93, in to_min_interval
+    shour, ehour = parse_hours(s), parse_hours(e)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/scripts/timeparsing.py", line 46, in parse_hours
+    raise Exception('illformed time: strange hours')
+Exception: illformed time: strange hours
+2018-01-05 12:59:14,783 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]

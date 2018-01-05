@@ -1,0 +1,116 @@
+2018-01-05 11:54:21,960 ERROR: Exception on /index [POST] [in /Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/routes.py", line 17, in index
+    if addform.validate_on_submit() and addform.submit.data:
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask_wtf/form.py", line 101, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/wtforms/form.py", line 310, in validate
+    return super(Form, self).validate(extra)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/wtforms/form.py", line 152, in validate
+    if not field.validate(self, extra):
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/wtforms/fields/core.py", line 204, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/wtforms/fields/core.py", line 224, in _run_validation_chain
+    validator(form, self)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/forms.py", line 68, in validate_sd
+    raise ValidationError("problems: " + inst.args)
+TypeError: cannot concatenate 'str' and 'tuple' objects
+2018-01-05 11:54:51,281 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 11:55:51,029 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 12:01:05,592 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 12:04:26,775 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 12:06:15,184 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 12:07:48,855 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 12:09:28,122 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 12:09:30,996 ERROR: Exception on /request_partner [GET] [in /Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/routes.py", line 147, in request_partner
+    temp2 = TP.timestr_to_minutes(t2)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/scripts/timeparsing.py", line 109, in timestr_to_minutes
+    return map(to_min_interval, tx)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/scripts/timeparsing.py", line 92, in to_min_interval
+    sm, em = parse_mins(s), parse_mins(e)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/scripts/timeparsing.py", line 18, in parse_mins
+    mins = int((s.partition(':')[2])[:2])
+ValueError: invalid literal for int() with base 10: '1p'
+2018-01-05 12:13:00,456 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 12:13:06,848 ERROR: Exception on /request_partner [GET] [in /Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/routes.py", line 146, in request_partner
+    temp1 = TP.timestr_to_minutes(t1)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/scripts/timeparsing.py", line 112, in timestr_to_minutes
+    return map(to_min_interval, tx)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/scripts/timeparsing.py", line 95, in to_min_interval
+    sm, em = parse_mins(s), parse_mins(e)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/scripts/timeparsing.py", line 20, in parse_mins
+    raise Exception('illformed time: wtf')
+Exception: illformed time: wtf
+2018-01-05 12:13:34,312 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 12:13:38,099 ERROR: Exception on /request_partner [GET] [in /Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/routes.py", line 146, in request_partner
+    temp1 = TP.timestr_to_minutes(t1)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/scripts/timeparsing.py", line 112, in timestr_to_minutes
+    return map(to_min_interval, tx)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/scripts/timeparsing.py", line 95, in to_min_interval
+    sm, em = parse_mins(s), parse_mins(e)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/scripts/timeparsing.py", line 20, in parse_mins
+    raise Exception('illformed time: wtf')
+Exception: illformed time: wtf
+2018-01-05 12:14:14,614 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 12:14:24,529 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 12:16:08,993 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 12:30:06,075 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 12:30:33,292 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 12:34:31,672 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 12:42:44,426 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 12:51:42,565 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 12:53:00,935 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]

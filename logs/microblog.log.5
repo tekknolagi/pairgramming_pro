@@ -1,0 +1,90 @@
+2018-01-05 15:26:37,368 ERROR: Exception on /request_partner [GET] [in /Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/routes.py", line 181, in request_partner
+    return render_template('request_partner.html', title='Request Partner', schedule=overlap, ft=total)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    context, ctx.app)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/templating.py", line 116, in _render
+    rv = template.render(context)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/templates/request_partner.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/jack_osx/Development/pairgrammingpro/app/templates/base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block "doc"
+    {%- block html %}
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block "html"
+    {% block body -%}
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 23, in block "body"
+    {% block content -%}
+  File "/Users/jack_osx/Development/pairgrammingpro/app/templates/base.html", line 52, in block "content"
+    {% block app_content %}{% endblock %}
+  File "/Users/jack_osx/Development/pairgrammingpro/app/templates/request_partner.html", line 7, in block "app_content"
+    {% for item in schedule %}
+TypeError: 'NoneType' object is not iterable
+2018-01-05 15:27:38,566 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 15:27:41,379 ERROR: Exception on /request_partner [GET] [in /Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1632, in finalize_request
+    response = self.process_response(response)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1858, in process_response
+    self.save_session(ctx.session, response)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 924, in save_session
+    return self.session_interface.save_session(self, session, response)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/sessions.py", line 363, in save_session
+    val = self.get_signing_serializer(app).dumps(dict(session))
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/itsdangerous.py", line 565, in dumps
+    payload = want_bytes(self.dump_payload(obj))
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/itsdangerous.py", line 847, in dump_payload
+    json = super(URLSafeSerializerMixin, self).dump_payload(obj)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/itsdangerous.py", line 550, in dump_payload
+    return want_bytes(self.serializer.dumps(obj))
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/sessions.py", line 85, in dumps
+    return json.dumps(_tag(value), separators=(',', ':'))
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/json.py", line 123, in dumps
+    rv = _json.dumps(obj, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 251, in dumps
+    sort_keys=sort_keys, **kw).encode(obj)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 209, in encode
+    chunks = list(chunks)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 434, in _iterencode
+    for chunk in _iterencode_dict(o, _current_indent_level):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 408, in _iterencode_dict
+    for chunk in chunks:
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 332, in _iterencode_list
+    for chunk in chunks:
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 408, in _iterencode_dict
+    for chunk in chunks:
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 332, in _iterencode_list
+    for chunk in chunks:
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 332, in _iterencode_list
+    for chunk in chunks:
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 442, in _iterencode
+    o = _default(o)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/json.py", line 80, in default
+    return _json.JSONEncoder.default(self, o)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: 1 intervals: [('Monday', '7:34pm', 'Monday', '8:04pm')] is not JSON serializable
+2018-01-05 15:28:40,265 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]

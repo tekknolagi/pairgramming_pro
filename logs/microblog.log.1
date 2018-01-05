@@ -1,0 +1,112 @@
+2018-01-05 17:21:57,024 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 17:23:49,687 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 17:23:53,082 ERROR: Exception on /request_partner [GET] [in /Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/routes.py", line 177, in request_partner
+    link='user/'+str(best_match.username))
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    context, ctx.app)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/templating.py", line 116, in _render
+    rv = template.render(context)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/templates/request_partner.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/jack_osx/Development/pairgrammingpro/app/templates/base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block "doc"
+    {%- block html %}
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block "html"
+    {% block body -%}
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 23, in block "body"
+    {% block content -%}
+  File "/Users/jack_osx/Development/pairgrammingpro/app/templates/base.html", line 52, in block "content"
+    {% block app_content %}{% endblock %}
+  File "/Users/jack_osx/Development/pairgrammingpro/app/templates/request_partner.html", line 8, in block "app_content"
+    <p><a href="{{ url_for(link) }}"></a></p>
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/helpers.py", line 333, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1805, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/helpers.py", line 323, in url_for
+    force_external=external)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/werkzeug/routing.py", line 1776, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'user/jack2'. Did you mean 'user' instead?
+2018-01-05 17:24:16,566 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 17:24:20,300 ERROR: Exception on /request_partner [GET] [in /Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/routes.py", line 177, in request_partner
+    link='user/'+str(best_match.username))
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/jinja2/environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/templates/request_partner.html", line 8, in template
+    <p><a href="{{ url_for({{link}}) }}"></a></p>
+TemplateSyntaxError: expected token ':', got '}'
+2018-01-05 17:25:14,027 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
+2018-01-05 17:25:17,234 ERROR: Exception on /request_partner [GET] [in /Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/jack_osx/Development/pairgrammingpro/app/routes.py", line 177, in request_partner
+    link=url_for('user/'+str(best_match.username)))
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/helpers.py", line 333, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/app.py", line 1805, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/flask/helpers.py", line 323, in url_for
+    force_external=external)
+  File "/Users/jack_osx/Development/pairgrammingpro/venv/lib/python2.7/site-packages/werkzeug/routing.py", line 1776, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'user/jack2'. Did you mean 'user' instead?
+2018-01-05 17:26:28,057 INFO: Microblog startup [in /Users/jack_osx/Development/pairgrammingpro/app/__init__.py:50]
